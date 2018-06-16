@@ -1,0 +1,27 @@
+
+
+
+.backbutton{
+    margin-top: 20px;
+    width: 80px;
+}
+
+#userInfo div{
+    margin-top: 20px;
+}
+#headPortrait {
+    width: 200px;
+}
+#headPortrait img{
+    width: 100%;
+}
+
+#reward-info div{
+
+}
+#Userreward-info{
+    font-size: 10px;
+}
+#Userreward-info div{
+    margin-top: 0px;
+}

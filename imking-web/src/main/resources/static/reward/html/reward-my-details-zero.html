@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我发的红包详情0</title>
+    <link rel="stylesheet" href="../../common/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/headerfooter.css"/>
+    <link rel="stylesheet" href="../css/reward-my-details-zero.css">
+</head>
+<body>
+<!-- 头部导航 -->
+
+<div  class="header">
+    <div class="container-fluid hrederTop">
+        <div class="container topcontent">
+            <img src="../../common/images/icon-notice.png"/><span>Mycat全方面为您提供服务！</span>
+        </div>
+    </div>
+    <div class="container-fluid hrederContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <a href="../../index.html"><img src="../../common/images/footerimg.png"/></a>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <ul class="linkcollection">
+                        <li class= "active" >
+                            <a href="#">首页</a>
+                        </li>
+                        <li>
+                            <a href="#">众包项目</a>
+                        </li>
+                        <li>
+                            <a href="#">精准招聘</a>
+                        </li>
+                        <li>
+                            <a href="./biz/reward/index.html">红包悬赏</a>
+                        </li>
+                        <li>
+                            <a href="#">黄浦教程</a>
+                        </li>
+                        <li>
+                            <a href="#">开源项目</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <button class="btn btn-info backbutton">返回</button>
+    </div>
+    <div class="row content">
+        <div class="col-md-4" id="userInfo">
+            <div id="headPortrait">
+                <img src="../images/reward-my-details-zero/u770.png">
+            </div>
+            <div id="userBaseInfo">
+                <span id="userName">笨笨熊</span>&nbsp;Lv<span id="userLevel">8</span>
+            </div>
+            <div id="Userreward-info">
+                <div >发了<span>50</span>个红包</div>
+                <div >投了¥<span>20000</span></div>
+                <div >抢了<span>20</span>个红包</div>
+                <div >赚了¥<span>20000</span></div>
+            </div>
+            <div id="AbilityList">
+                <ul>
+                    <li>慷慨度
+
+                    </li>
+                    <li>信用度
+
+                    </li>
+                    <li>可靠度
+
+                    </li>
+                    <li>表达欲
+
+                    </li>
+                    <li>责任感
+
+                    </li>
+                    <li>沟通力
+
+                    </li>
+                    <li>理解力
+
+                    </li>
+                    <li>响应力
+
+                    </li>
+                    <li>分析力
+
+                    </li>
+                    <li>专业度
+
+                    </li>
+                    <li>视野
+
+                    </li>
+                    <li>复杂问题解决
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-8" id="reward-infoAndapply-Info">
+            <div class="row">
+                这里是红包的详情
+            </div>
+            <div class="row">
+                这里是全部申请
+                <div id="abc"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script>
+    window.onload = function(){
+        $('#abc').load("./CommonHtml/Star.html?score=10&total=10");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .star-vote{
+            width:120px;
+            height:20px;
+            position:relative;
+            overflow:hidden;
+        }
+        .star-vote>span{
+            position:absolute;
+            width:120px;
+            height:20px;
+            background-size:cover;
+            background-repeat:no-repeat;
+            left:0px;
+            top:0px;
+        }
+        .star-vote>.add-star{
+            background-image:url(../images/Star/StarEmpty.png);
+        }
+        .star-vote>.del-star{
+            background-image:url(../images/Star/StarFull.png);
+            background-color:white;
+        }
+    </style>
+</head>
+<body>
+<div id="star_con" class="star-vote">
+    <span id="add_star" class="add-star"></span>
+    <span id="del_star" class="del-star"></span>
+    <script>
+        window.onload=showStar();
+
+        //n表示后台获取的星数
+        function showStar(){
+            var _requestParam  = getRequestParam();
+            var score = _requestParam.score;
+            var total = _requestParam.total;
+            var con_wid=document.getElementById("star_con").offsetWidth;
+            var del_star=document.getElementById("del_star");
+            console.log(con_wid);
+
+            //透明星星移动的像素
+            var del_move=(score*con_wid)/total;
+
+            del_star.style.backgroundPosition=-del_move+"px 0px";
+            del_star.style.left=del_move+"px";
+        }
+
+
+        function getRequestParam() {
+            var _url = location.search;
+            var _theRequest = new Object();
+
+            if (_url.indexOf("?") != -1) {
+                var _str = _url.substr(1);
+                strs = _str.split("&");
+                for(var i = 0; i < strs.length; i ++) {
+                    var _requestParamKey = strs[i].split("=")[0];
+                    var _requestParamValue = unescape(strs[i].split("=")[1]);
+                    _theRequest[_requestParamKey] = _requestParamValue;
+                }
+            }
+            return _theRequest;
+        }
+    </script>
+</div>
+</body>
+</html>
